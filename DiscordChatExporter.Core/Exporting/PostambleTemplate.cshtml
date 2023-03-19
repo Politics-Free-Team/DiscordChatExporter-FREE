@@ -1,0 +1,22 @@
+﻿@inherits RazorBlade.HtmlTemplate
+
+@functions {
+    public required ExportContext ExportContext { get; init; }
+
+    public required long MessagesWritten { get; init; }
+}
+
+@{
+    /* Close elements opened by preamble */
+}
+<!--wmm:ignore-->
+</div>
+<!--/wmm:ignore-->
+
+<div class="postamble">
+    <div class="postamble__entry">Exported @MessagesWritten.ToString("N0") message(s)</div>
+</div>
+
+</body>
+
+</html>
